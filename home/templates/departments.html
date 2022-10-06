@@ -1,0 +1,26 @@
+{% extends 'theme.html' %}
+{% block content %}
+
+<div class ="dep">
+<h1> Departments </h1>
+
+    {% for d in dep %}
+
+    <div class="card" style="width: 35rem";
+    
+        <div class="card-body">
+          <h5 class="card-title">{{d.depname}}</h5>
+          <p class="card-text">{{ d.depdes }}</p>
+        </div>
+      </div>
+    
+    
+    
+    
+    {% endfor %}
+  
+
+
+</div>
+
+{% endblock content %}

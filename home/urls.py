@@ -4,11 +4,11 @@ from . import views
 urlpatterns = [
     path('',views.index,name="index"),
     
-    path('about',views.about,name="about"),
+    path('depp',views.depp,name="depp"),
     
     path('contact',views.contact,name="contact"),
     
-    path('doctor',views.doctor,name="doctor"),
+    path('doctors',views.doc,name="doctors"),
     
     path('booking',views.booking,name="booking"),
 ]

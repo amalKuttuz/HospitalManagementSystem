@@ -1,0 +1,8 @@
+li:hover{
+    background-color: green; 
+    border: solid greenyellow 1px;  
+}
+
+.card{
+        border: solid green 4px;
+}

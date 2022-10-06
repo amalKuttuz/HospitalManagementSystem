@@ -1,6 +1,25 @@
 {% extends 'theme.html' %}
 {% block content %}
 
-<h1> Doctor </h1>
+{% for dj in doc  %}
+
+<div class="d-inline-block p-2">
+<div class="card" style="width: 20rem ">
+    <img src="{{dj.dimg.url}}" class="card-img-top" alt="Doctors image">
+    <div class="card-body">
+    <h2> {{dj.dname}} </h2>
+        <b > {{dj.depname}} </b>
+
+      <p class="card-text">{{dj.ddes}}
+    </p>
+    </div>
+  </div>
+</div>
+
+
+
+{% endfor %}
+
+
 
 {% endblock content %}
